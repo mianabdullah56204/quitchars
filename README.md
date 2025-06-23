@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # quitchars
 
 A new Flutter project.
@@ -16,3 +17,6 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 "# quitchars" 
 "# QuitChars" 
+=======
+# quitchars
+>>>>>>> 8a9a3eec0629589a5e4c1162710eee524f969d1f
