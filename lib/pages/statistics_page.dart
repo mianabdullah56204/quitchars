@@ -115,32 +115,40 @@ class _StatisticsPageState extends State<StatisticsPage> {
                       child: Image(image: AssetImage('assets/mountains.jpg')),
                     ),
                     SizedBox(height: 10),
-                    Row(children: [Column()]),
-                    Text(
-                      _timeDisplay,
-                      style: TextStyle(
-                        fontSize: 40,
-                        fontWeight: FontWeight.w500,
-                        color: Color.fromARGB(255, 75, 98, 5),
-                        // letterSpacing: 4,
-                        wordSpacing: 6,
-                        fontFeatures: [FontFeature.tabularFigures()],
-                      ),
-                      textAlign: TextAlign.center,
+                    Row(
+                      children: [
+                        Column(
+                          children: [
+                            Text(
+                              _timeDisplay,
+                              style: TextStyle(
+                                fontSize: 40,
+                                fontWeight: FontWeight.w500,
+                                color: Color.fromARGB(255, 75, 98, 5),
+                                // letterSpacing: 4,
+                                wordSpacing: 6,
+                                fontFeatures: [FontFeature.tabularFigures()],
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                            SizedBox(height: 6),
+                            Text(
+                              'Days Hours Min Sec',
+                              style: TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.w300,
+                                color: Colors.black87,
+                                // letterSpacing: 6,
+                                wordSpacing: 12,
+                                fontFeatures: [FontFeature.tabularFigures()],
+                              ),
+                              textAlign: TextAlign.center,
+                            ),
+                          ],
+                        ),
+                      ],
                     ),
-                    SizedBox(height: 6),
-                    Text(
-                      'Days Hours Min Sec',
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.w300,
-                        color: Colors.black87,
-                        // letterSpacing: 6,
-                        wordSpacing: 12,
-                        fontFeatures: [FontFeature.tabularFigures()],
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
+
                     SizedBox(height: 20),
                     //           Text(
                     //             "since ${_startDate.day} ${_getMonthName(_startDate.month)} ${_startDate.year}, "
